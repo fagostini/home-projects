@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "home-projects"
+version = "0.1.0"
+description = ""
+authors = ["Federico Agostini <agostini.federico@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+blinkt = "^0.1.2"
+gpiozero = "^2.0"
+Pillow = "^10.1.0"
+"RPi.Sensor" = "^0.5.3"
+inky = "^1.5.0"
+machine = "^0.0.1"
+network = "^0.1"
+
+[tool.poetry.group.dev.dependencies]
+mpremote = "^1.21.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

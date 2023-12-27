@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Raspberry Pi Pico W Homepage</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 0.5rem;
+        background-color: rgba(0, 0, 0, 0.1);
+        border: solid rgba(0, 0, 0, 0.15);
+        border-width: 1px 0;
+        box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1), inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -0.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="heroes.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <h1 class="visually-hidden">Heroes examples</h1>
+
+      <div class="px-4 py-5 text-center">
+        <h1 class="display-5 fw-bold">Welcome</h1>
+        <p class="lead mb-4">
+          Nextcloud Hub integrates the four key Nextcloud products Files, Talk, Groupware and Office into a single
+          platform, optimizing the flow of collaboration.
+        </p>
+        <div class="col-lg-7 mx-auto">
+          <h2 class="display-7 my-4 fw-bold">Quick links</h2>
+          <div class="d-grid gap-2 d-sm-flex my-4 justify-content-sm-center">
+            <a class="btn btn-danger mx-2" href="https://mail.google.com/mail/" role="button">GMail</a>
+            <a class="btn btn-warning mx-2" href="https://github.com/" role="button">GitHub</a>
+            <a class="btn btn-warning mx-2" href="https://gitlab.com/" role="button">GitLab</a>
+            <a class="btn btn-primary mx-2" href="https://bitbucket.org/dashboard/overview" role="button">BitBucket</a>
+            <a class="btn btn-primary mx-2" href="https://moleculent.atlassian.net/jira/your-work" role="button"
+              >Jira</a
+            >
+            <a class="btn btn-info mx-2" href="https://mastodon.online/home" role="button">Mastodon</a>
+          </div>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a class="btn btn-success mx-2" href="https://www.rentcafe.com/?role=resident" role="button">RentCafe</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="b-example-divider"></div>
+
+      <div class="px-4 my-5 text-center">
+        <div class="col-lg-7 mx-auto">
+          <h2 class="display-7 fw-bold">Globally available services</h2>
+          <p class="lead mb-4">
+            Nextcloud Hub integrates the four key Nextcloud products Files, Talk, Groupware and Office into a single
+            platform, optimizing the flow of collaboration.
+          </p>
+          <img
+            src="https://media.kuketz.de/blog/artikel/2022/nextcloudpi/nextcloudpi.png"
+            alt="NextCloudPi Logo 1"
+            width="100px"
+            vspace="10px"
+          />
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+            <a class="btn btn-primary" href="https://nextcloudpi.local:4443" role="button">Nextcloud Control Panel</a>
+          </div>
+          <img
+            src="https://docs.nextcloudpi.com/assets/ncp-logo-dark.b667b6b1.svg"
+            alt="NextCloudPi Logo 2"
+            width="100px"
+            vspace="10px"
+          />
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a class="btn btn-primary" href="https://nextcloud-agostini.ddns.net" role="button">Nextcloud Dashboard</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="px-4 text-center border-bottom">
+        <h1 class="display-7 fw-bold">Locally available services</h1>
+        <div class="col-lg-7 mx-auto">
+          <p class="lead mb-4">
+            The Pi-hole is a DNS sinkhole that protects your devices from unwanted content, without installing any
+            client-side software.
+          </p>
+          <img
+            class="d-block mx-auto mb-4"
+            src="https://pi-hole.net/wp-content/uploads/2016/12/cropped-Vortex-R-1-192x192.png"
+            alt=""
+            width="100px"
+          />
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+            <a class="btn btn-danger" href="http://192.168.0.24" role="button">Pi-hole Dashboard</a>
+          </div>
+        </div>
+        <!--   <div class="col-lg-7 mx-auto">
+          <p class="lead mb-4">
+            RaspAP is feature-rich wireless router software that just works on many popular Debian-based devices,
+            including the Raspberry Pi.
+          </p>
+          <img
+            class="d-block mx-auto mb-4"
+            src="https://avatars.githubusercontent.com/u/78154814?s=200&v=4"
+            alt=""
+            width="10%"
+            height="10%"
+          />
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+            <a class="btn btn-danger" href="http://192.168.0.24" role="button">RaspAP Dashboard</a>
+          </div>
+        </div>  -->
+        <div class="overflow-hidden" style="max-height: 30vh">
+          <div class="container px-5"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
